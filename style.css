@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap');
+
+* {
+    font-family: 'Exo', sans-serif;
+}
+
+body {
+    background-image: url(img/img1.jpg);
+    background-size: 1600px;
+    background-repeat: no-repeat; 
+}
+
+#card {
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.2rem;
+}
+
+#service {
+    background-image: url(img/img1.jpg);
+}
+#contentService {
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+}
+
+.button a {
+    position: fixed;
+    text-decoration: none;
+    bottom: 4rem;
+    right: 3rem;
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    padding: 0.5rem;
+    transition: 0.2s ease-out;
+  }
+  
+  .button a i {
+    color: #fff;
+    transition: 0.2s ease-out;
+  }

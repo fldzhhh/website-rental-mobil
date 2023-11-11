@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Recar | Home</title>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" sizes="100x16">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 mb-5">
+        <div class="container">
+            <a href="" class="navbar-brand text-dark fs-5 fw-bold me-5">
+                <i class="ri-steering-line me-2 text-light bg-dark rounded-circle p-1"></i>
+                E-Recar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#footer" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            FAQ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">how much does it cost?</a></li>
+                            <li><a class="dropdown-item" href="#">what are the facilities?</a></li>
+                            <li><a class="dropdown-item" href="#">what is the rental time limit?</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control rounded-pill me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                </form>
+                <button class="btn btn-dark fw-bold rounded-circle mt-5 mt-md-0" data-bs-toggle="modal"
+                    data-bs-target="#registerModal"><i class="ri-user-line"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal Modal Form Registrasi -->
+    <div class="modal fade" id="registerModal" aria-labelledby="registerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content w-100">
+                <div class="modal-header ">
+                    <h5 id="registerLabel">Register</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating py-2 px-3 mt-3">
+                            <input type="text" class="form-control" id="fname" placeholder="First Name">
+                            <label for="fname" class="px-4">First Name</label>
+                        </div>
+                        <br>
+                        <div class="form-floating py-2 px-3">
+                            <input type="text" class="form-control" id="Username" placeholder="Username">
+                            <label for="Username" class="px-4">Username</label>
+                        </div>
+                        <br>
+                        <div class="form-floating py-2 px-3">
+                            <input type="Password" class="form-control" id="Password" placeholder="Password">
+                            <label for="Password" class="px-4">Password</label>
+                        </div>
+                        <br>
+                        <div class="form-floating py-2 px-3">
+                            <input type="Password" class="form-control" id="Password" placeholder="Confirm Password">
+                            <label for="Password" class="px-4">Confirm Password</label>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <button class="btn btn-dark ml-4 mb-3 fw-bold">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Modal Form Registrasi -->
+
+    <!-- Awal konten-->
+    <div class="container py-5 mt-5">
+        <h5 class=" py-2 mt-5 text-light text-center">Want to travel far without hassle?</h5>
+        <h1 class="fw-bold text-light text-center mt-3 mb-5" style="font-size: 70px;">E-Recar is the solution</h1>
+        <div class="card-group mt-3">
+            <div class="card me-3" id="card">
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                        <label class="input-group date text-light" for="inputGroupSelect01"><i
+                                class="ri-map-pin-5-line me-3"></i>Location</label>
+                        <select class="form-select mt-3 rounded-pill" id="inputGroupSelect01">
+                            <option selected>Choose a Location</option>
+                            <option value="1">Pekalongan, Central Java</option>
+                            <option value="2">Pemalang, Central Java</option>
+                            <option value="3">Batang Central Java</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="card me-3" id="card">
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                        <label class="input-group date text-light" for="inputGroupSelect01"><i
+                                class="ri-map-pin-5-line me-3"></i>Pick-Up Date</label>
+                        <input type="date" class="form-control w-90 mt-3 rounded-pill" placeholder="Pick-Up Date"
+                            aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+            </div>
+            <div class="card me-3" id="card">
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                        <label class="input-group date text-light" for="inputGroupSelect01"><i
+                                class="ri-map-pin-5-line me-3"></i>Return Date</label>
+                        <input type="date" class="form-control w-90 mt-3 rounded-pill" placeholder=""
+                            aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="" class="btn btn-dark px-5 fw-bold text-light">Rental Now</a>
+        </div>
+    </div>
+    <!-- Akhir Konten-->
+
+    <!-- Awal Produk-->
+    <div class="container-fluid bg-light mb-5">
+        <div class="container">
+            <h1 class="text-center py-5 mt-5 text-dark">Our Product</h1>
+            <div class="card-group">
+                <div class="card">
+                    <img src="img/img2.jpg" class="card-img-top" style="opacity: 90%;" alt="...">
+                    <div class="card-img-overlay text-center mt-5 py-5">
+                        <a href="#" class="btn btn-outline-light px-3">See Detail</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img3.jpg" class="card-img-top" style="opacity: 90%;" alt="...">
+                    <div class="card-img-overlay text-center mt-5 py-5">
+                        <a href="#" class="btn btn-outline-light px-3">See Detail</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img4.jpg" class="card-img-top" style="opacity: 90%;" alt="...">
+                    <div class="card-img-overlay text-center mt-5 py-5">
+                        <a href="#" class="btn btn-outline-light px-3">See Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Produk-->
+
+    <!-- Awal Waitlist -->
+    <div class="container mt-3">
+        <h1 class="text-center fw-bold mb-5">Waitlist</h1>
+        <table class="table table-light">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Date</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ferdian Smith</td>
+                    <td>03 December 2023</td>
+                    <td>ferdiansmith@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Marshel Scott</td>
+                    <td>13 December 2023</td>
+                    <td>marshelscott@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Sely Haw</td>
+                    <td>30 December 2023</td>
+                    <td>selyhaw@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Akhir Waitlist -->
+
+    <!-- Awal Our Service -->
+    <section class="service mt-5 mb-5" id="service">
+        <div class="container">
+            <div class="row py-5 px-5 d-flex justify-content-center">
+                <h1 class="text-center mb-5 text-light">Our Service</h1>
+                <div class="card-group">
+                    <div class="card text-light me-3" style="width: 22rem;" id="contentService">
+                        <span class="fs-1 text-center mt-3"><i class="ri-car-line"></i></span>
+                        <div class="card-body">
+                            <h5 class="text-center">Car</h5>
+                        </div>
+                    </div>
+                    <div class="card text-light me-3" style="width: 22rem;" id="contentService">
+                        <span class="fs-1 text-center mt-3"><i class="ri-user-4-line"></i></span>
+                        <div class="card-body">
+                            <h5 class="text-center">Driver</h5>
+                        </div>
+                    </div>
+                    <div class="card text-light" style="width: 22rem;" id="contentService">
+                        <span class="fs-1 text-center mt-3"><i class="ri-map-pin-user-line"></i></span>
+                        <div class="card-body">
+                            <h5 class="text-center">Tour Guide</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Our Service -->
+
+    <!-- Awal Testimonials -->
+    <div class="container py-5">
+        <h1 class="text-center mb-5 text-dark">Testimonials & Galleries</h1>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner mb-5">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="nama d-flex">
+                                        <img src="img/profile1.jpg" alt="" width="30" height="30"
+                                            class="rounded-circle me-3">
+                                        <h6 class="card-title mt-1 fw-bold">Zea Angelina</h6>
+                                    </div>
+                                    <p class="card-text mt-3">this is a truly enjoyable experience.haha thank u</p>
+                                    <div class="star mt-4">
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="nama d-flex">
+                                        <img src="img/profile2.jpg" alt="" width="30" height="30"
+                                            class="rounded-circle me-3">
+                                        <h6 class="card-title mt-1 fw-bold">Michele Agustina</h6>
+                                    </div>
+                                    <p class="card-text mt-3">really impressive service, good job</p>
+                                    <div class="star mt-4">
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="nama d-flex">
+                                        <img src="img/profile3.jpg" alt="" width="30" height="30"
+                                            class="rounded-circle me-3">
+                                        <h6 class="card-title mt-1 fw-bold">Samuel Smith</h6>
+                                    </div>
+                                    <p class="card-text mt-3">really helped when we were short of a car</p>
+                                    <div class="star mt-4">
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bx-star text-warning fs-6'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="nama d-flex">
+                                        <img src="img/profile4.jpg" alt="" width="30" height="30"
+                                            class="rounded-circle me-3">
+                                        <h6 class="card-title mt-1 fw-bold">Cassandra Kim</h6>
+                                    </div>
+                                    <p class="card-text mt-3">my family realy happy, thank u</p>
+                                    <div class="star mt-4">
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bx-star text-warning fs-6'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="nama d-flex">
+                                        <img src="img/profile5.jpg" alt="" width="30" height="30"
+                                            class="rounded-circle me-3">
+                                        <h6 class="card-title mt-1 fw-bold">Alex Leonard</h6>
+                                    </div>
+                                    <p class="card-text mt-3">affordable prices and very helpful</p>
+                                    <div class="star mt-4">
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="nama d-flex">
+                                        <img src="img/profile6.jpg" alt="" width="30" height="30"
+                                            class="rounded-circle me-3">
+                                        <h6 class="card-title mt-1 fw-bold">Leo Shin</h6>
+                                    </div>
+                                    <p class="card-text mt-3">friendly service</p>
+                                    <div class="star mt-4">
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                        <i class='bx bxs-star text-warning fs-6'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="card-group border-none">
+                <div class="card">
+                    <img src="img/gallery1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="img/gallery2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="img/gallery3.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <video autoplay muted loop id="myVideo">
+                <source src="video/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <!-- Akhir Testimonials -->
+
+    <!-- Awal About Us -->
+    <section class="service mt-5 mb-5">
+        <div class="container">
+            <div class="row py-5 px-5 d-flex">
+                <div class="col-md-6 mt-md-0 mb-3">
+                    <h5 class="mb-4 text-muted">About Us</h5>
+                    <h1 class="fw-bold"><i class="ri-steering-line text-light me-2 bg-dark rounded-circle p-1"></i>
+                        E-Recar</h1>
+                    <p class="mt-4">wherever and whenever we are ready to serve you because customer satisfaction is our
+                        priority</p>
+                    <p>
+                        <i class="ri-map-pin-line me-2"></i>Pekalongan, Central Java
+                    </p>
+                    <p>
+                        <i class="ri-mail-line me-2"></i>rencarofficial@gmail.com
+                    </p>
+                    <p>
+                        <i class="ri-phone-line me-2"></i>+62 856-4176-5219
+                    </p>
+                    <a href="" class="btn btn-dark px-5 mt-4 fw-bold text-light">Rental Now</a>
+                </div>
+
+                <div class="col-md-6 mt-md-0 mt-3 mb-3">
+                    <img src="img/img6.png" alt="" width="550px" height="300px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Abou Us -->
+
+    <!-- Awal Lokasi -->
+    <div class="container-fluid mb-5">
+        <div class="card">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4121652738977!2d109.63610717356612!3d-6.960609868147208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021b4d2b766bb%3A0x40dacfe03dd23e15!2sITS%20NU%20Pekalongan!5e0!3m2!1sid!2sid!4v1699322900364!5m2!1sid!2sid"
+                height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+        </div>
+    </div>
+    <!-- Akhir Lokasi -->
+
+    <!-- Awal Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4" id="footer">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-white"><i
+                            class="ri-steering-line text-light me-2 bg-dark rounded-circle p-1"></i>E-Recar</h5>
+                    <p>wherever and whenever we are ready to serve you because customer satisfaction is our priority</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-white">Service</h5>
+                    <p>
+                        <a href="#" class="text-decoration-none text-white">Rental Car</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-white">Rental Driver</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-white">Rental Tour Guide</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-white">FAQ</h5>
+                    <p>
+                        <a href="#" class="text-decoration-none text-white">how much does it cost?</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-white">what are the facilities?</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none text-white">what is the rental time limit?</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-white">Contact</h5>
+                    <p>
+                        <i class="ri-map-pin-line me-2"></i>Pekalongan, Central Java
+                    </p>
+                    <p>
+                        <i class="ri-mail-line me-2"></i>rencarofficial@gmail.com
+                    </p>
+                    <p>
+                        <i class="ri-phone-line me-2"></i>+62 856-4176-5219
+                    </p>
+                </div>
+
+                <br class="mb-4">
+                <div class="col-md-6 mt-3">
+                    <div class="col-md-7 col-lg-8">
+                        <p>Copyright &copy; 2023 All rights reserved by:
+                            <a href="#" class="text-decoration-none"><strong class="text-white">E-Recar</strong></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="text-center">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://instagram.com/fl.dzhh?igshid=MWhwcjZpb2o4d3EyOA=="
+                                    class="btn btn-outline-light rounded-circle me-3"><i
+                                        class="ri-instagram-fill"></i></a></li>
+                            <li><a href="https://www.facebook.com/Fil.dzhh?mibextid=ZbWKwL"
+                                    class="btn btn-outline-light rounded-circle me-3"><i
+                                        class="ri-facebook-fill"></i></a></li>
+                            <li><a href="https://www.tiktok.com/@inisiapai?_t=8hF4RrOqkQE&_r=1"
+                                    class="btn btn-outline-light rounded-circle"><i class="ri-tiktok-fill"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>+62 856-4176-5219
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Awal Button on Top -->
+    <div class="button">
+        <a href="https://api.whatsapp.com/send?phone=6285641765219&text=Hi,I%20want%20to%20be%20a%20member%20E-Recar"
+            class="me-5"><i class='bx bxl-whatsapp'></i></a>
+        <a href="#" id=""><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+    <!-- Akhir Button on Top -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
